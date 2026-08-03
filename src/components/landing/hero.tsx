@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { SacredBadge } from "@/components/landing/sacred-badge";
 import { SignCanvas } from "@/components/sign/sign-canvas";
 import { createDesign, createLocation } from "@/lib/defaults";
 
@@ -13,7 +13,7 @@ const preview = {
   locations: [
     createLocation({
       name: "Neighborhood Pantry",
-      address: "88 Hope Street",
+      address: "42 hope street",
       city: "Your City",
       state: "CA",
       zip: "90210",
@@ -44,9 +44,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Badge className="mb-5 gap-1">
-              <Sparkles className="h-3 w-3" /> Free Community Yard Sign Templates
-            </Badge>
+            <SacredBadge>Free Community Yard Sign Templates</SacredBadge>
             <h1 className="font-[family-name:var(--font-display)] text-5xl font-bold leading-[0.95] tracking-tight text-[var(--brand-ink)] sm:text-6xl lg:text-7xl">
               KindSign
             </h1>

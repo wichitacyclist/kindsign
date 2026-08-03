@@ -24,7 +24,9 @@ export function formatAddress(parts: {
   state: string;
   zip: string;
 }) {
-  return `${parts.address}, ${parts.city}, ${parts.state} ${parts.zip}`;
+  return [parts.address, [parts.city, parts.state, parts.zip].filter(Boolean).join(" ")]
+    .filter((part) => part.trim().length > 0)
+    .join(", ");
 }
 
 export function mapsUrl(parts: {
