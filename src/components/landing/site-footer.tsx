@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GITHUB_URL, SUPPORT_URL } from "@/lib/links";
 
 export function SiteFooter() {
   return (
@@ -8,7 +9,7 @@ export function SiteFooter() {
           <span className="font-semibold text-[var(--brand-ink)]">KindSign</span> —
           open-source donation signs for community kindness.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           <Link href="/create" className="hover:text-[var(--brand-ink)]">
             Create
           </Link>
@@ -16,10 +17,18 @@ export function SiteFooter() {
             Gallery
           </Link>
           <a
-            href="https://github.com"
+            href={SUPPORT_URL}
+            className="font-semibold text-[var(--brand)] hover:brightness-110"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Support the site
+          </a>
+          <a
+            href={GITHUB_URL}
             className="hover:text-[var(--brand-ink)]"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open source
           </a>

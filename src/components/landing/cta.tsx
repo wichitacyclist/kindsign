@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { SUPPORT_URL } from "@/lib/links";
 
 export function CtaBand() {
   return (
@@ -11,9 +12,10 @@ export function CtaBand() {
           </h2>
           <p className="mt-3 text-white/85">
             Generate a beautiful sign today. Share your template so the next volunteer
-            starts even faster.
+            starts even faster. If KindSign helps your community, you can support the
+            project too.
           </p>
-          <div className="mt-7">
+          <div className="mt-7 flex flex-wrap gap-3">
             <Link href="/create">
               <Button
                 size="lg"
@@ -22,6 +24,15 @@ export function CtaBand() {
                 Create your first KindSign
               </Button>
             </Link>
+            <a href={SUPPORT_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/40 bg-transparent text-white hover:bg-white/10"
+              >
+                Support the site
+              </Button>
+            </a>
           </div>
         </div>
       </div>
