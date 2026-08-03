@@ -28,10 +28,10 @@ export function GalleryGrid() {
       <div className="max-w-2xl">
         <Badge>Community Templates</Badge>
         <h1 className="mt-3 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-[var(--brand-ink)]">
-          Design a sign. Edit a template. Print Yard Signs.
+          Design a sign. Edit a template. Print Yard Signs. Create positive change.
         </h1>
         <p className="mt-3 text-[var(--brand-muted)]">
-          Anyone can publish a design. Start from a proven template and make it yours.
+          Yard Signs Gallery
         </p>
       </div>
 

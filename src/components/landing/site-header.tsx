@@ -23,7 +23,7 @@ export function SiteHeader() {
             How it works
           </Link>
           <Link href="/gallery" className="hover:text-[var(--brand-ink)]">
-            Community
+            Yard Signs
           </Link>
           <Link href="/create" className="hover:text-[var(--brand-ink)]">
             Templates

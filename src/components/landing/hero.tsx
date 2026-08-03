@@ -45,15 +45,14 @@ export function Hero() {
             transition={{ duration: 0.5 }}
           >
             <Badge className="mb-5 gap-1">
-              <Sparkles className="h-3 w-3" /> Open movement for community kindness
+              <Sparkles className="h-3 w-3" /> Free Community Yard Sign Templates
             </Badge>
             <h1 className="font-[family-name:var(--font-display)] text-5xl font-bold leading-[0.95] tracking-tight text-[var(--brand-ink)] sm:text-6xl lg:text-7xl">
               KindSign
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--brand-muted)] sm:text-xl">
-              The world&apos;s easiest open-source donation sign system. Beautiful,
-              print-ready yard signs in under five minutes — for any city, church,
-              school, or neighbor who wants to help.
+              Beautiful, print-ready yard signs in under five minutes - for any city,
+              church, school or neighbor who wants to help.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/create">
@@ -67,9 +66,6 @@ export function Hero() {
                 </Button>
               </Link>
             </div>
-            <p className="mt-6 text-sm text-[var(--brand-muted)]">
-              No guilt. No politics. Just neighbors helping neighbors.
-            </p>
           </motion.div>
         </div>
 

@@ -1,8 +1,24 @@
 const steps = [
-  { n: "01", title: "Choose a template", body: "Food drive, school, church, winter coats — pick a starting point." },
-  { n: "02", title: "Customize with joy", body: "Headline, emphasis, locations, theme, icon, logo, QR — auto-balanced." },
-  { n: "03", title: "Preview & check", body: "Street-readable preview with accessibility and print quality checks." },
-  { n: "04", title: "Export or order", body: "PDF, PNG, or SVG — plus one-click presets for popular printers." },
+  {
+    n: "01",
+    title: "Pick a yard sign template",
+    body: "Food drive, school, church, coats, pets — choose a design that fits your cause.",
+  },
+  {
+    n: "02",
+    title: "Add your details",
+    body: "Type your headline, drop-off locations, logo, and QR codes. KindSign layouts everything for you.",
+  },
+  {
+    n: "03",
+    title: "Download a print-ready file",
+    body: "Export a PDF or PNG at 300 DPI with bleed — ready for a professional yard-sign printer.",
+  },
+  {
+    n: "04",
+    title: "Order from a major printer",
+    body: "One click opens Signs.com, Signs On The Cheap, or Imprint. Upload your file and order stakes + shipping.",
+  },
 ];
 
 export function HowItWorks() {
@@ -10,8 +26,12 @@ export function HowItWorks() {
     <section id="how" className="border-y border-[var(--brand-border)] bg-white/50 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-[var(--brand-ink)] sm:text-4xl">
-          From idea to yard in under five minutes
+          Easily Design your Yard Sign / Create a Template / Use Our Templates /
+          Create Community Good
         </h2>
+        <p className="mt-3 max-w-2xl text-base text-[var(--brand-muted)]">
+          KindSign designs the sign. You download the file. Then you order printing from a trusted yard-sign company — no design skills required.
+        </p>
         <div className="mt-10 grid gap-6 md:grid-cols-4">
           {steps.map((s) => (
             <div key={s.n} className="relative">

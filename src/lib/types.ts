@@ -42,12 +42,10 @@ export type SignSizeId = "18x24" | "24x36" | "11x17" | "a4" | "a3";
 export type MapStyle = "none" | "city" | "state" | "county" | "skyline";
 
 export type PrinterPresetId =
-  | "custom"
-  | "imprint"
   | "signs-com"
-  | "vistaprint"
-  | "uprinting"
-  | "signs-on-the-cheap";
+  | "signs-on-the-cheap"
+  | "imprint"
+  | "custom";
 
 export interface DropOffLocation {
   id: string;
@@ -125,11 +123,16 @@ export interface SignSize {
 export interface PrinterPreset {
   id: PrinterPresetId;
   name: string;
+  tagline: string;
   url: string;
+  orderUrl: string;
   recommendedSizeId: SignSizeId;
+  recommendedExport: "pdf" | "png";
   bleedIn: number;
   fileTypes: ("pdf" | "png" | "svg")[];
   dpi: number;
   notes: string;
   colorMode: "RGB" | "CMYK-safe";
+  featured: boolean;
+  steps: string[];
 }

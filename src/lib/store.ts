@@ -39,7 +39,7 @@ export const useEditorStore = create<EditorState>()(
     (set, get) => ({
       design: createDesign("community"),
       step: "template",
-      printerPresetId: "custom",
+      printerPresetId: "signs-com",
       gallery: [],
       setStep: (step) => set({ step }),
       setPrinterPreset: (printerPresetId) => set({ printerPresetId }),
