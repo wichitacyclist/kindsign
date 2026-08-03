@@ -1,12 +1,12 @@
 const steps = [
   {
     n: "01",
-    title: "Pick a yard sign template",
+    title: "Choose a Template",
     body: "Food drive, school, church, coats, pets — choose a design that fits your cause.",
   },
   {
     n: "02",
-    title: "Add your details",
+    title: "Edit",
     body: "Type your headline, drop-off locations, logo, and QR codes. KindSign layouts everything for you.",
   },
   {
