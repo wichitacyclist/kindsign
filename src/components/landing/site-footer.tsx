@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GITHUB_URL, SUPPORT_URL } from "@/lib/links";
+import { GITHUB_URL, SUPPORT_EMAIL, SUPPORT_URL } from "@/lib/links";
 
 export function SiteFooter() {
   return (
@@ -15,6 +15,12 @@ export function SiteFooter() {
           <Link href="/gallery" className="hover:text-[var(--brand-ink)]">
             Gallery
           </Link>
+          <a
+            href={`mailto:${SUPPORT_EMAIL}`}
+            className="hover:text-[var(--brand-ink)]"
+          >
+            {SUPPORT_EMAIL}
+          </a>
           <a
             href={SUPPORT_URL}
             className="font-semibold text-[var(--brand)] hover:brightness-110"
