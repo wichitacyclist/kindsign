@@ -6,8 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-[var(--brand-border)] py-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 text-sm text-[var(--brand-muted)] sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p>
-          <span className="font-semibold text-[var(--brand-ink)]">KindSign</span> —
-          open-source donation signs for community kindness.
+          Community based, yard sign templates.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link href="/create" className="hover:text-[var(--brand-ink)]">
