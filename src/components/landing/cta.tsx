@@ -8,7 +8,7 @@ export function CtaBand() {
       <div className="overflow-hidden rounded-[2rem] bg-[var(--brand)] px-8 py-12 text-white shadow-xl sm:px-12">
         <div className="max-w-2xl">
           <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight sm:text-4xl">
-            Help your community. Inspire a movement! 💚 🤝 🙏
+            Help your community. Inspire a movement!
           </h2>
           <p className="mt-3 text-white/85">
             Generate a beautiful sign today. Share your template so the next volunteer
