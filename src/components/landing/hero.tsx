@@ -13,7 +13,7 @@ const preview = {
   locations: [
     createLocation({
       name: "Neighborhood Pantry",
-      address: "42 hope street",
+      address: "42 Hope Street",
       city: "Your City",
       state: "CA",
       zip: "90210",
