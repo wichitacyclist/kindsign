@@ -2,6 +2,16 @@
 
 import { motion } from "framer-motion";
 
+/** Fixed petal centers — avoids SSR/client float precision hydration mismatches. */
+const PETAL_CENTERS = [
+  { cx: "42", cy: "32" },
+  { cx: "37", cy: "40.66" },
+  { cx: "27", cy: "40.66" },
+  { cx: "22", cy: "32" },
+  { cx: "27", cy: "23.34" },
+  { cx: "37", cy: "23.34" },
+] as const;
+
 function SacredGeometryMark() {
   return (
     <span className="relative grid h-8 w-8 shrink-0 place-items-center" aria-hidden>
@@ -13,23 +23,18 @@ function SacredGeometryMark() {
       >
         <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.45" />
         <circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.7" />
-        {[0, 60, 120, 180, 240, 300].map((deg) => {
-          const rad = (deg * Math.PI) / 180;
-          const cx = 32 + Math.cos(rad) * 10;
-          const cy = 32 + Math.sin(rad) * 10;
-          return (
-            <circle
-              key={deg}
-              cx={cx}
-              cy={cy}
-              r="10"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              opacity="0.55"
-            />
-          );
-        })}
+        {PETAL_CENTERS.map((petal) => (
+          <circle
+            key={`${petal.cx}-${petal.cy}`}
+            cx={petal.cx}
+            cy={petal.cy}
+            r="10"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1"
+            opacity="0.55"
+          />
+        ))}
       </motion.svg>
       <motion.svg
         viewBox="0 0 64 64"
