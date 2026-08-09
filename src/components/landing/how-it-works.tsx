@@ -7,7 +7,7 @@ const steps = [
   {
     n: "02",
     title: "Edit",
-    body: "Type your headline, drop-off locations, logo, and QR codes. KindSign layouts everything for you.",
+    body: "Type your headline, drop-off locations, logo, and QR codes. KindSign lays out everything for you.",
   },
   {
     n: "03",

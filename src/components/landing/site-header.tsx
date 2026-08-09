@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Coffee, HeartHandshake } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SUPPORT_URL } from "@/lib/links";
 
 export function SiteHeader() {
   return (
@@ -28,31 +27,10 @@ export function SiteHeader() {
           <Link href="/create" className="hover:text-[var(--brand-ink)]">
             Templates
           </Link>
-          <a
-            href={SUPPORT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[var(--brand-ink)]"
-          >
-            Support
-          </a>
         </nav>
-        <div className="flex items-center gap-2">
-          <a
-            href={SUPPORT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:hidden"
-            aria-label="Support KindSign"
-          >
-            <Button variant="outline" size="icon">
-              <Coffee className="h-4 w-4" />
-            </Button>
-          </a>
-          <Link href="/create">
-            <Button>Create a sign</Button>
-          </Link>
-        </div>
+        <Link href="/create">
+          <Button>Create a sign</Button>
+        </Link>
       </div>
     </header>
   );

@@ -15,12 +15,24 @@ const sans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kindsign.vercel.app"),
   title: "KindSign — Beautiful donation yard signs in under 5 minutes",
   description:
-    "Open-source donation sign system for cities, churches, schools, and nonprofits. Customize, preview, and export print-ready PDF, PNG, and SVG.",
+    "Free community yard sign templates for cities, churches, schools, and neighbors. Customize, preview, and export print-ready files in under five minutes.",
   openGraph: {
-    title: "KindSign",
-    description: "Canva for community kindness — print-ready donation yard signs.",
+    title: "KindSign — Free community yard sign templates",
+    description:
+      "Design a beautiful donation yard sign in under 5 minutes. Export print-ready files and order from major printers.",
+    url: "https://kindsign.vercel.app",
+    siteName: "KindSign",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KindSign — Free community yard sign templates",
+    description:
+      "Design a beautiful donation yard sign in under 5 minutes. Export print-ready files and order from major printers.",
   },
 };
 
